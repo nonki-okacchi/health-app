@@ -14,14 +14,15 @@ medicine = st.selectbox("薬", ["飲んだ", "飲んでない"])
 
 file_path = "health_log.csv"
 
-if st.button("保存"):
-    new_data = pd.DataFrame([{
+if st.button("保存"):　　　
+     new_data = pd.DataFrame([{
         "日付": today,
         "頭痛": headache,
         "睡眠": sleep,
         "食事時間": meal_time,
         "天気": weather,
         "薬": medicine
+}])
     }])
 
     if os.path.exists(file_path):
