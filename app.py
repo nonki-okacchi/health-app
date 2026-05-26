@@ -33,4 +33,3 @@ if st.button("保存"):
     df.to_csv(file_path, index=False)
 
     st.success("保存しました！")
-``
